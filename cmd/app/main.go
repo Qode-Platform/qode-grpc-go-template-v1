@@ -5,9 +5,6 @@
 // cannot browse it — the port does listen, so bin/run's port check passes.
 // Readiness is the standard grpc.health.v1 service, which grpc_health_probe
 // and Kubernetes' gRPC probes speak.
-//
-// BASE_PATH is not applicable: a gRPC method is /package.Service/Method, not a
-// URL path an ingress prefix can be prepended to.
 package main
 
 import (
